@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro DOM</title>
+    <style>
+        body{
+            background-color: blueviolet;
+            color: white;
+            font: 20pt;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .daylon{
+            font-size: 25px;
+            color: brown;
+            background-color: azure;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="daylon">iniciando estudos com DOM</h1>
+    <p>Aprendendo dom com JS</p>
+    <p>Aqui vai o resultado</p>
+    <div>Click em mim</div>  
+    
+    <script>
+       /* Comando para usar TAG
+       var p1 = window.document.getElementsByTagName('p')[0]
+       seleção por tag onde ('AQUI FICA TAG') [AQUI A POSIÇÃO]*/
+
+       /*Comando para usar ID
+       var d = window.document.getElementById('daylon')
+       */
+    
+       /*  Comando para usar NAME
+       var d = window.document.getElementsByName('daylon')[0]*/
+
+       /*Comando para usar CLASS 
+       var d = window.document.getElementsByClassName('daylon')[0]*/
+       
+       /*Comando para selecionar CLASS dentro da TAG 
+       var d = window.document.querySelector('h1.daylon')*/
+       
+    </script>
+</body>
+</html>

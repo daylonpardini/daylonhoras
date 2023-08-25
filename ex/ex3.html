@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: blue;
+            color: red;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+
+        
+        //O uso do (Write) para escrita na pagina
+        var nome = window.prompt('Qual seu nome?');
+        var sal = parseFloat(window.prompt('Qual seu salario?'));
+
+
+        document.write(`Ola, <strong>${nome}</strong>! Seu nome tem ${nome.length} letras<br>`) 
+        document.write(`Seu nome em maiusculo fica ${nome.toUpperCase()}<br>`)
+        document.write(`Seu nome em minusculo fica ${nome.toLowerCase()}`)
+        document.write(`Seu salario é: ${sal.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`); //Transformar numeros digitados no prompt em Real para fazer em dolar so altera BRL para USD
+
+
+    </script>
+    
+</body>
+</html>
